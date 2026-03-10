@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Kingdom Life International Ministries | Apostle Chris Meshack</title>
-    <meta name="description" content="Official website of Kingdom Life International Ministries. Led by Apostle Chris Meshack.">
+    <title>The Kingdom Impact School of Leadership | Apostle Chris Meshack</title>
+    <meta name="description" content="Official page for The Kingdom Impact School of Leadership. Equipping saints for the work of the ministry.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,44 +84,7 @@
         .btn-outline-dark:hover { background: var(--primary-dark); color: var(--white); }
 
         /* =========================================
-           2. BACK TO TOP BUTTON
-           ========================================= */
-        #backToTop {
-            position: fixed;
-            bottom: 30px; 
-            right: 30px;  
-            background: var(--accent-gold);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: none;
-            cursor: pointer;
-            z-index: 990;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(20px);
-            transition: all 0.3s ease;
-        }
-
-        #backToTop.visible {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-
-        #backToTop:hover {
-            background: var(--accent-gold-dark);
-            transform: translateY(-3px);
-        }
-
-        /* =========================================
-           3. NAVIGATION (PROFESSIONAL ARRANGEMENT)
+           2. NAVIGATION
            ========================================= */
         nav {
             position: fixed; top: 0; left: 0; width: 100%; height: var(--nav-height);
@@ -142,28 +105,22 @@
         }
 
         .logo {
-            font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700;
+            font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700;
             display: flex; align-items: center; gap: 10px; z-index: 1002;
             color: var(--white);
             text-decoration: none;
         }
         
         .logo-img {
-            height: 40px; 
-            width: auto;
-            max-width: 40px;
-            object-fit: contain;
+            height: 40px; width: auto; max-width: 40px; object-fit: contain;
         }
         nav.scrolled .logo-img { height: 35px; max-width: 35px; }
 
-        .nav-menu { display: flex; gap: 25px; align-items: center; } /* Increased gap for professional spacing */
+        .nav-menu { display: flex; gap: 25px; align-items: center; }
         .nav-link {
-            font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px;
-            position: relative; opacity: 0.9; transition: opacity 0.3s;
+            font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;
+            position: relative; opacity: 0.9;
         }
-        .nav-link:hover { opacity: 1; }
-        
-        /* Underline effect */
         .nav-link::after {
             content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px;
             background: var(--accent-gold); transition: var(--transition);
@@ -172,7 +129,6 @@
 
         .mobile-toggle { display: none; font-size: 1.5rem; cursor: pointer; color: var(--white); z-index: 1002; }
         
-        /* Mobile Menu Overlay */
         .mobile-menu-overlay {
             position: fixed; inset: 0; background: var(--primary-dark);
             z-index: 1001; display: flex; flex-direction: column;
@@ -180,15 +136,15 @@
             transform: translateX(100%); transition: transform 0.4s ease;
         }
         .mobile-menu-overlay.active { transform: translateX(0); }
-        .mobile-menu-overlay a { font-size: 1.4rem; font-family: 'Playfair Display'; color: var(--white); }
+        .mobile-menu-overlay a { font-size: 1.3rem; font-family: 'Playfair Display'; color: var(--white); }
 
         /* =========================================
-           4. HERO SECTION
+           3. HERO SECTION
            ========================================= */
         .hero {
-            position: relative; min-height: 100vh; width: 100%;
-            background: linear-gradient(135deg, rgba(22, 33, 62, 0.85), rgba(26, 26, 46, 0.9)),
-                        url('https://images.unsplash.com/photo-1507646227500-4d389b0012be?q=80&w=2070&auto=format&fit=crop');
+            position: relative; min-height: 80vh; width: 100%;
+            background: linear-gradient(135deg, rgba(22, 33, 62, 0.9), rgba(26, 26, 46, 0.95)),
+                        url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop');
             background-size: cover; background-position: center;
             color: var(--white); display: flex; align-items: center; justify-content: center;
             overflow: hidden; text-align: center;
@@ -197,7 +153,7 @@
 
         #spiritCanvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
 
-        .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 0 20px; width: 100%; }
+        .hero-content { position: relative; z-index: 2; max-width: 900px; padding: 0 20px; width: 100%; }
         
         .hero-label {
             display: inline-block; padding: 6px 16px; border: 1px solid rgba(212, 175, 55, 0.6);
@@ -206,91 +162,49 @@
         }
 
         .hero-title {
-            font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 20px; font-weight: 700;
+            font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 20px; font-weight: 700;
         }
-
-        .hero-subtitle {
-            font-size: clamp(1rem, 2vw, 1.1rem); font-weight: 300; opacity: 0.9; margin-bottom: 35px;
-        }
-
-        .hero-actions { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
 
         /* =========================================
-           5. STATS SECTION (RESTORED)
+           4. PROGRAMS SECTION
            ========================================= */
-        .stats-container { position: relative; margin-top: -50px; z-index: 10; padding: 0 20px; }
-        .stats-bar {
-            background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(15px);
-            border-radius: var(--radius-lg); padding: 40px 20px; display: grid;
-            /* Desktop: 4 columns */
-            grid-template-columns: repeat(4, 1fr); 
-            gap: 20px; box-shadow: var(--shadow-lg);
+        .program-card {
+            background: white; border: 1px solid #eee; border-radius: 12px; overflow: hidden;
+            transition: var(--transition); display: flex; flex-direction: column;
         }
-        .stat-item { text-align: center; border-right: 1px solid rgba(0,0,0,0.05); padding: 0 10px; }
-        .stat-item:last-child { border: none; }
-        .stat-number { font-family: 'Playfair Display'; font-size: 2rem; font-weight: 700; color: var(--primary-purple); display: block; margin-bottom: 5px; }
-        .stat-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); font-weight: 600; }
-
-        /* =========================================
-           6. MINISTRY SECTION (IMAGE + TEXT)
-           ========================================= */
-        .about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-        .about-img-wrapper { border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg); min-height: 450px; }
-        .about-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+        .program-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); border-color: var(--accent-gold); }
         
-        .section-header { margin-bottom: 50px; text-align: center; }
-        .section-header span { color: var(--accent-gold); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; }
-        .section-header h2 { font-size: 2.2rem; margin-top: 10px; }
+        .program-header {
+            background: var(--primary-dark); color: white; padding: 30px; text-align: center;
+        }
+        .program-header i { font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 15px; }
+        .program-body { padding: 30px; flex-grow: 1; }
+        .program-body ul { margin-top: 15px; margin-bottom: 20px; }
+        .program-body li { margin-bottom: 10px; color: var(--text-light); font-size: 0.9rem; display: flex; align-items: flex-start; gap: 10px; }
+        .program-body li i { color: var(--accent-gold); margin-top: 4px; }
 
         /* =========================================
-           7. BOOKS SECTION (BOXES & FULL IMAGES)
+           5. BOOKS SECTION
            ========================================= */
         .books-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
         
         .book-card {
-            background: #fff; /* White background */
-            border: 1px solid #e0e0e0; /* Thin border to separate books */
-            border-radius: 12px; 
-            padding: 20px; /* Padding inside the box */
-            text-align: center; 
-            transition: var(--transition); 
-            display: flex; 
-            flex-direction: column;
-            height: 100%;
+            background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; 
+            padding: 20px; text-align: center; transition: var(--transition); 
+            display: flex; flex-direction: column; height: 100%;
         }
-        
-        .book-card:hover {
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            transform: translateY(-5px);
-            border-color: var(--accent-gold);
-        }
+        .book-card:hover { box-shadow: 0 15px 35px rgba(0,0,0,0.1); transform: translateY(-5px); border-color: var(--accent-gold); }
 
-        .book-cover {
-            width: 100%;
-            margin-bottom: 20px;
-            /* Using flex to center the image if it's smaller than container */
-            display: flex; 
-            justify-content: center;
-        }
-        
-        /* The actual image tag - fully visible */
-        .book-cover img {
-            width: 100%;
-            height: auto;
-            box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
-            border-radius: 4px;
-        }
-
+        .book-cover { width: 100%; margin-bottom: 20px; display: flex; justify-content: center; }
+        .book-cover img { width: 100%; height: auto; box-shadow: 5px 5px 15px rgba(0,0,0,0.15); border-radius: 4px; }
         .book-title { font-size: 1.1rem; margin-bottom: 5px; color: var(--primary-dark); font-weight: 700; min-height: 50px; display: flex; align-items: center; justify-content: center;}
         .book-subtitle { font-size: 0.85rem; color: var(--text-light); margin-bottom: 10px; font-style: italic; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 40px;}
         .book-author { font-size: 0.8rem; color: var(--accent-gold); margin-bottom: 15px; font-weight: 600; text-transform: uppercase; }
         .book-actions { margin-top: auto; }
 
         /* =========================================
-           8. EVENTS & SERMONS
+           6. CLASS RECORDINGS (Duplicate Sermons)
            ========================================= */
-        
-        /* Sermons */
         .sermon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
         .sermon-card {
             background: var(--white); border-radius: var(--radius-md); overflow: hidden;
@@ -312,29 +226,28 @@
         .card-cat { color: var(--accent-gold); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; display: block; }
         .card-title { font-size: 1.1rem; margin-bottom: 15px; color: var(--primary-dark); }
 
-        /* Events List */
-        .events-list { max-width: 900px; margin: 0 auto; }
-        .event-item {
-            display: flex; background: white; border-radius: 12px; overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 20px;
-            transition: var(--transition); border: 1px solid #eee;
+        /* =========================================
+           7. PAST CLASSES / GRADUATION
+           ========================================= */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .grad-card {
+            position: relative; border-radius: 12px; overflow: hidden;
+            aspect-ratio: 4/3; cursor: pointer;
         }
-        .event-item:hover { transform: scale(1.02); }
-        .event-date {
-            background: var(--primary-dark); color: var(--accent-gold);
-            width: 100px; display: flex; flex-direction: column;
-            align-items: center; justify-content: center; text-align: center;
-            padding: 20px;
+        .grad-card img {
+            width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;
         }
-        .event-date .day { font-size: 2rem; font-weight: 700; font-family: 'Playfair Display'; line-height: 1; }
-        .event-date .month { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
-        .event-details { padding: 20px 30px; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
-        .event-details h3 { font-size: 1.3rem; margin-bottom: 5px; color: var(--primary-dark); }
-        .event-meta { font-size: 0.85rem; color: var(--text-light); margin-bottom: 10px; }
-        .event-meta i { color: var(--accent-gold); margin-right: 8px; width: 15px; text-align: center; }
+        .grad-card:hover img { transform: scale(1.1); }
+        .grad-overlay {
+            position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;
+            opacity: 0.9; transition: opacity 0.3s;
+        }
+        .grad-year { font-family: 'Playfair Display'; font-size: 1.5rem; color: var(--accent-gold); font-weight: 700; }
+        .grad-desc { font-size: 0.9rem; color: rgba(255,255,255,0.8); }
 
         /* =========================================
-           9. CONTACT FORM
+           8. CONTACT / REGISTER FORM
            ========================================= */
         .prayer-container {
             max-width: 600px; margin: 0 auto; background: var(--white);
@@ -355,21 +268,15 @@
         }
 
         /* =========================================
-           10. FOOTER
+           9. FOOTER & MODALS
            ========================================= */
-        footer { background: #111; color: rgba(255,255,255,0.7); padding: 60px 0 20px; font-size: 0.9rem; }
-        .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-bottom: 40px; }
+        footer { background: #111; color: rgba(255,255,255,0.7); padding: 40px 0 20px; font-size: 0.9rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 30px; }
         .footer-logo { color: var(--white); font-family: 'Playfair Display'; font-size: 1.4rem; margin-bottom: 15px; display: block; }
         .footer h4 { color: var(--white); font-family: 'Plus Jakarta Sans'; font-size: 0.9rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
-        .footer-links li { margin-bottom: 10px; }
-        .social-icons { display: flex; gap: 10px; margin-top: 20px; }
-        .social-icons a { width: 35px; height: 35px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: 0.3s; }
-        .social-icons a:hover { background: var(--accent-gold); }
         .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; font-size: 0.8rem; }
 
-        /* =========================================
-           11. MODALS & TOASTS
-           ========================================= */
+        /* Modal */
         .modal-overlay {
             position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px);
             z-index: 2000; display: none; align-items: center; justify-content: center;
@@ -408,89 +315,40 @@
         .reveal.active { opacity: 1; transform: translateY(0); }
 
         /* =========================================
-           12. MEDIA QUERIES
+           10. MEDIA QUERIES
            ========================================= */
-        
         @media (max-width: 900px) {
-            .hero-title { font-size: 2.5rem; }
-            .footer-grid { grid-template-columns: 1fr 1fr; }
             .books-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-            .sermon-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-            .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 30px; }
-            .stat-item { border: none; }
-            .about-layout { gap: 30px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
         }
 
         @media (max-width: 768px) {
             .nav-menu { display: none; }
             .mobile-toggle { display: block; }
-            
             .hero-title { font-size: 2rem; }
-            .section-padding { padding: 60px 0; }
-            
-            .about-layout { grid-template-columns: 1fr; }
-            .about-img-wrapper { order: -1; min-height: 300px; margin-bottom: 20px; }
-            
-            .btn { width: 100%; justify-content: center; }
-            .hero-actions { flex-direction: column; width: 100%; }
-            
-            .prayer-container { padding: 30px 20px; }
-
-            /* Event List Mobile */
-            .event-item { flex-direction: column; }
-            .event-date { width: 100%; flex-direction: row; gap: 10px; padding: 10px; }
-        }
-
-        @media (max-width: 480px) {
-            .container { padding: 0 15px; }
             .books-grid { grid-template-columns: 1fr; }
-            .sermon-grid { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
-            #backToTop { bottom: 20px; right: 20px; width: 45px; height: 45px; font-size: 1rem; }
-            .hero-title { font-size: 1.8rem; }
-            .section-header h2 { font-size: 1.8rem; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .prayer-container { padding: 30px 20px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" aria-label="Back to Top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Mobile Navigation (Professional Order) -->
-    <div class="mobile-menu-overlay" id="mobileMenu">
-        <div style="position: absolute; top: 25px; right: 25px; font-size: 2rem; cursor: pointer; color: white;" onclick="toggleMobileMenu()">&times;</div>
-        <a href="#home" onclick="toggleMobileMenu()">Home</a>
-        <a href="#ministry" onclick="toggleMobileMenu()">Ministry</a>
-        <a href="#books" onclick="toggleMobileMenu()">Books</a>
-        <a href="#sermons" onclick="toggleMobileMenu()">Sermons</a>
-        <a href="#contacts" onclick="toggleMobileMenu()">Contacts</a>
-        <a href="#events" onclick="toggleMobileMenu()">Events</a>
-        <a href="leadership-school.html" onclick="toggleMobileMenu()" class="text-gold">School Leadership</a>
-        <a href="javascript:void(0)" onclick="toggleModal('giving'); toggleMobileMenu()" class="btn btn-gold" style="margin-top:10px;">Giving</a>
-    </div>
-
-    <!-- Navigation (Professional Order: Home, Ministry, Books, Sermons, Contacts, Events, School Leadership, Giving) -->
+    <!-- Navigation -->
     <nav id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <!-- Logo Placeholder -->
-                <img src="images/logo1.png" alt="Kingdom Life Logo" class="logo-img">
-                <span>KINGDOM<span class="text-gold">LIFE</span></span>
+                <img src="https://ui-avatars.com/api/?name=KISL&background=D4AF37&color=fff&rounded=true" alt="KISL Logo" class="logo-img">
+                <span>THE KINGDOM<span class="text-gold"> SCHOOL</span></span>
             </a>
             
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#ministry" class="nav-link">Ministry</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
                 <li><a href="#books" class="nav-link">Books</a></li>
-                <li><a href="#sermons" class="nav-link">Sermons</a></li>
-                <li><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li><a href="#events" class="nav-link">Events</a></li>
-                <!-- School Leadership Links to SEPARATE PAGE -->
-                <li><a href="leadership-school.html" class="nav-link text-gold">School Leadership</a></li>
-                <li><a href="javascript:void(0)" onclick="toggleModal('giving')" class="btn btn-gold" style="padding: 8px 20px; font-size: 0.8rem; margin-left: 10px;">Giving</a></li>
+                <li><a href="#classes" class="nav-link">Class Recordings</a></li>
+                <li><a href="#graduation" class="nav-link">Alumni</a></li>
+                <li><a href="javascript:void(0)" onclick="toggleModal('giving')" class="btn btn-gold" style="padding: 8px 20px; font-size: 0.8rem; margin-left: 10px;">Give</a></li>
             </ul>
 
             <div class="mobile-toggle" onclick="toggleMobileMenu()">
@@ -499,90 +357,145 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div style="position: absolute; top: 25px; right: 25px; font-size: 2rem; cursor: pointer; color: white;" onclick="toggleMobileMenu()">&times;</div>
+        <a href="#about" onclick="toggleMobileMenu()">About</a>
+        <a href="#programs" onclick="toggleMobileMenu()">Programs</a>
+        <a href="#books" onclick="toggleMobileMenu()">Books</a>
+        <a href="#classes" onclick="toggleMobileMenu()">Class Recordings</a>
+        <a href="#graduation" onclick="toggleMobileMenu()">Alumni</a>
+        <a href="javascript:void(0)" onclick="toggleModal('giving'); toggleMobileMenu()" class="text-gold">Give</a>
+    </div>
+
     <!-- Hero Section -->
-    <header class="hero" id="home">
+    <header class="hero">
         <canvas id="spiritCanvas"></canvas>
         <div class="hero-content">
-            <span class="hero-label">Welcome to Kingdom Life</span>
-            <h1 class="hero-title">Awakening Destinies.<br>Building Nations.</h1>
-            <p class="hero-subtitle">Join Apostle Chris Meshack in a global movement of spiritual transformation, leadership mentorship, and divine purpose.</p>
-            <div class="hero-actions">
-                <a href="#books" class="btn btn-gold">View Resources</a>
-                <a href="#contacts" class="btn btn-outline">Connect With Us</a>
-            </div>
+            <span class="hero-label">Kingdom Impact School</span>
+            <h1 class="hero-title">The Kingdom Impact School of Leadership</h1>
+            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                A divine mandate to raise a generation of leaders who understand the depths of God and the systems of kingdom advancement.
+            </p>
+            <a href="#programs" class="btn btn-gold">View Programs</a>
+            <a href="#contact" class="btn btn-outline">Register Now</a>
         </div>
     </header>
 
-    <!-- Stats Section (Restored) -->
-    <div class="container stats-container reveal">
-        <div class="stats-bar">
-            <div class="stat-item">
-                <span class="stat-number" data-target="12">0</span>
-                <span class="stat-label">Nations</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-target="5000">0</span>
-                <span class="stat-label">Lives Transformed</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-target="150">0</span>
-                <span class="stat-label">Leaders</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" data-target="6">0</span>
-                <span class="stat-label">Books Published</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Ministry Section (About + Image) -->
-    <section id="ministry" class="section-padding">
+    <!-- About Section -->
+    <section id="about" class="section-padding">
         <div class="container">
-            <div class="about-layout">
-                <!-- Apostle Chris Image -->
-                <div class="about-img-wrapper reveal">
-                    <img src="images/Chris1.jpg" alt="Apostle Chris Meshack" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop';">
-                </div>
-                <!-- Ministry Description -->
-                <div class="content-side reveal">
-                    <span style="color:var(--accent-gold); font-weight:700; text-transform:uppercase; font-size:0.8rem; letter-spacing:2px;">The Ministry</span>
-                    <h2 style="font-size: 2.2rem; margin: 15px 0 25px;">Apostle Chris Meshack</h2>
+            <div class="about-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                <div class="reveal">
+                    <span style="color:var(--accent-gold); font-weight:700; text-transform:uppercase; font-size:0.8rem; letter-spacing:2px;">Our Mandate</span>
+                    <h2 style="font-size: 2.2rem; margin: 15px 0 25px;">Why Join the School?</h2>
                     <p style="color: var(--text-light); margin-bottom: 20px;">
-                        Apostle Chris Meshack is the founder and presiding Bishop of Kingdom Life International Ministries. Called to raise a generation of leaders who understand the depths of God and the dynamics of life, his ministry focuses on accurate teaching of the Word, spiritual growth, and leadership development.
+                        The Kingdom Impact School of Leadership is not just a class; it is a transformational journey. We move beyond theoretical knowledge to practical impartation.
                     </p>
                     <p style="color: var(--text-light); margin-bottom: 30px;">
-                        Through the Kingdom Impact School of Leadership and various literary works, he continues to equip believers worldwide to manifest dominion in every sphere of life.
+                        Whether you are a pastor, business leader, or minister, you will learn how to navigate spiritual seasons, manage church systems, and walk in the full weight of your mantle.
                     </p>
-                    <a href="#contacts" class="btn btn-outline-dark">Contact Apostle Chris</a>
+                    <div style="display: flex; gap: 20px;">
+                        <div>
+                            <h3 class="text-gold" style="font-size: 2rem; margin-bottom: 5px;">500+</h3>
+                            <span style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-light);">Graduates</span>
+                        </div>
+                        <div>
+                            <h3 class="text-gold" style="font-size: 2rem; margin-bottom: 5px;">12</h3>
+                            <span style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-light);">Modules</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img-wrapper reveal" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg); min-height: 400px;">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2070&auto=format&fit=crop" alt="Students Learning">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Books Section (Boxes, Borders, Full Images) -->
-    <section id="books" class="section-padding" style="background: var(--off-white);">
+    <!-- Programs Section -->
+    <section id="programs" class="section-padding" style="background: var(--off-white);">
         <div class="container">
-            <div class="section-header text-center reveal">
-                <span>Resources</span>
-                <h2>Books by Apostle Chris Meshack</h2>
-                <p style="color:var(--text-light); margin-top:10px; max-width:600px; margin-left:auto; margin-right:auto;">
-                    Deepen your understanding of purpose, ministry, and leadership.
-                </p>
+            <div class="text-center reveal" style="margin-bottom: 50px;">
+                <span style="color:var(--accent-gold); font-weight:700; text-transform:uppercase; font-size:0.8rem; letter-spacing:2px;">Curriculum</span>
+                <h2 style="font-size: 2.2rem; margin-top: 10px;">Our Programs</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <!-- Program 1 -->
+                <div class="program-card reveal">
+                    <div class="program-header">
+                        <i class="fas fa-bible"></i>
+                        <h3>Biblical Leadership</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>Understanding the foundation of spiritual authority and servant leadership.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> The Theology of Leadership</li>
+                            <li><i class="fas fa-check"></i> Character Development</li>
+                            <li><i class="fas fa-check"></i> Spiritual Disciplines</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-dark" style="width: 100%; border-radius: 8px;">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="program-card reveal">
+                    <div class="program-header">
+                        <i class="fas fa-chess"></i>
+                        <h3>Church Systems</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>Practical strategies for building and managing effective church structures.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Organizational Management</li>
+                            <li><i class="fas fa-check"></i> Team Building</li>
+                            <li><i class="fas fa-check"></i> Resource Mobilization</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-dark" style="width: 100%; border-radius: 8px;">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="program-card reveal">
+                    <div class="program-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Missions & Evangelism</h3>
+                    </div>
+                    <div class="program-body">
+                        <p>Equipping leaders to take the gospel to the ends of the earth effectively.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Cross-Cultural Ministry</li>
+                            <li><i class="fas fa-check"></i> Missions Strategy</li>
+                            <li><i class="fas fa-check"></i> Community Impact</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-dark" style="width: 100%; border-radius: 8px;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section (Required Reading) -->
+    <section id="books" class="section-padding">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom: 50px;">
+                <span style="color:var(--accent-gold); font-weight:700; text-transform:uppercase; font-size:0.8rem; letter-spacing:2px;">Required Reading</span>
+                <h2 style="font-size: 2.2rem; margin-top: 10px;">Leadership Resources</h2>
+                <p style="color: var(--text-light); max-width: 600px; margin: 10px auto;">These books form the core curriculum for our advanced leadership modules.</p>
             </div>
 
             <div class="books-grid">
-                <!-- Book 1: Capacity for PURPOSE -->
+                <!-- Book 1: Church Leadership Dynamics -->
                 <div class="book-card reveal">
                     <div class="book-cover">
-                        <!-- Image Tag used to show full cover -->
-                        <img src="https://z-cdn-media.chatglm.cn/files/06b42252-eeea-4f40-bbc1-fa2fcac500ce.jpeg?auth_key=1873142371-9257fea2c67f4f2689593f47a7110aeb-0-d68f89d657381045e71945763f2b78e2" alt="Capacity for Purpose">
+                        <img src="https://z-cdn-media.chatglm.cn/files/7803f36b-98b5-4763-8615-05d95fba89b7.jpeg?auth_key=1873142371-36bbf6be31b34c058032434b4cdd43a1-0-5eb697a49a3a949eb3d2dbbb6d915fa8" alt="Church Leadership Dynamics">
                     </div>
-                    <h3 class="book-title">Capacity for Purpose</h3>
-                    <p class="book-subtitle">The desire to build stature</p>
+                    <h3 class="book-title">Church Leadership Dynamics</h3>
+                    <p class="book-subtitle">Revealing Systems That Strengthen Church Leadership</p>
                     <p class="book-author">Chris Meshack</p>
                     <div class="book-actions">
-                        <!-- Passing Image URL to function -->
-                        <button class="btn btn-outline-dark" onclick="buyBook('Capacity for Purpose', 'https://z-cdn-media.chatglm.cn/files/06b42252-eeea-4f40-bbc1-fa2fcac500ce.jpeg?auth_key=1873142371-9257fea2c67f4f2689593f47a7110aeb-0-d68f89d657381045e71945763f2b78e2')">Get Copy</button>
+                        <button class="btn btn-outline-dark" onclick="buyBook('Church Leadership Dynamics', 'https://z-cdn-media.chatglm.cn/files/7803f36b-98b5-4763-8615-05d95fba89b7.jpeg?auth_key=1873142371-36bbf6be31b34c058032434b4cdd43a1-0-5eb697a49a3a949eb3d2dbbb6d915fa8')">Get Copy</button>
                     </div>
                 </div>
 
@@ -599,33 +512,7 @@
                     </div>
                 </div>
 
-                <!-- Book 3: CHURCH LEADERSHIP DYNAMICS -->
-                <div class="book-card reveal">
-                    <div class="book-cover">
-                        <img src="https://z-cdn-media.chatglm.cn/files/7803f36b-98b5-4763-8615-05d95fba89b7.jpeg?auth_key=1873142371-36bbf6be31b34c058032434b4cdd43a1-0-5eb697a49a3a949eb3d2dbbb6d915fa8" alt="Church Leadership Dynamics">
-                    </div>
-                    <h3 class="book-title">Church Leadership Dynamics</h3>
-                    <p class="book-subtitle">Revealing Systems That Strengthen Church Leadership</p>
-                    <p class="book-author">Chris Meshack</p>
-                    <div class="book-actions">
-                        <button class="btn btn-outline-dark" onclick="buyBook('Church Leadership Dynamics', 'https://z-cdn-media.chatglm.cn/files/7803f36b-98b5-4763-8615-05d95fba89b7.jpeg?auth_key=1873142371-36bbf6be31b34c058032434b4cdd43a1-0-5eb697a49a3a949eb3d2dbbb6d915fa8')">Get Copy</button>
-                    </div>
-                </div>
-
-                <!-- Book 4: 5 QUESTIONS THAT SHAPE YOUR DESTINY -->
-                <div class="book-card reveal">
-                    <div class="book-cover">
-                        <img src="https://z-cdn-media.chatglm.cn/files/4f6ccb23-d35a-46b2-bd05-a09eeeadfd90.jpeg?auth_key=1873142371-4b5ebccd45c14609b5f54d4b0734dfe3-0-8f2cad508f6144c315d2a56b0543a113" alt="5 Questions That Shape Your Destiny">
-                    </div>
-                    <h3 class="book-title">5 Questions That Shape Your Destiny</h3>
-                    <p class="book-subtitle">Discover your path</p>
-                    <p class="book-author">Chris Meshack</p>
-                    <div class="book-actions">
-                        <button class="btn btn-outline-dark" onclick="buyBook('5 Questions That Shape Your Destiny', 'https://z-cdn-media.chatglm.cn/files/4f6ccb23-d35a-46b2-bd05-a09eeeadfd90.jpeg?auth_key=1873142371-4b5ebccd45c14609b5f54d4b0734dfe3-0-8f2cad508f6144c315d2a56b0543a113')">Get Copy</button>
-                    </div>
-                </div>
-
-                <!-- Book 5: The Weight of the Mantle -->
+                <!-- Book 3: The Weight of the Mantle -->
                 <div class="book-card reveal">
                     <div class="book-cover">
                         <img src="https://z-cdn-media.chatglm.cn/files/dc950567-0402-4705-97c3-ec19b03d5121.jpeg?auth_key=1873142371-2825c1fc9ed344a0bfac5732310eae61-0-4c44cbf63489db817fa05be766d60e2e" alt="The Weight of the Mantle">
@@ -637,29 +524,16 @@
                         <button class="btn btn-outline-dark" onclick="buyBook('The Weight of the Mantle', 'https://z-cdn-media.chatglm.cn/files/dc950567-0402-4705-97c3-ec19b03d5121.jpeg?auth_key=1873142371-2825c1fc9ed344a0bfac5732310eae61-0-4c44cbf63489db817fa05be766d60e2e')">Get Copy</button>
                     </div>
                 </div>
-
-                <!-- Book 6: UNDERSTANDING MINISTRY ORDINATIONS -->
-                <div class="book-card reveal">
-                    <div class="book-cover">
-                        <img src="https://z-cdn-media.chatglm.cn/files/2439a252-0739-4ad3-bae2-fd2737b34baf.jpeg?auth_key=1873142371-b7f3259837654ad584068f631513f343-0-7f01ed12bd92e43b493a576162ec3b8a" alt="Understanding Ministry Ordinations">
-                    </div>
-                    <h3 class="book-title">Understanding Ministry Ordinations</h3>
-                    <p class="book-subtitle">Separation for Service</p>
-                    <p class="book-author">Chris Meshack</p>
-                    <div class="book-actions">
-                        <button class="btn btn-outline-dark" onclick="buyBook('Understanding Ministry Ordinations', 'https://z-cdn-media.chatglm.cn/files/2439a252-0739-4ad3-bae2-fd2737b34baf.jpeg?auth_key=1873142371-b7f3259837654ad584068f631513f343-0-7f01ed12bd92e43b493a576162ec3b8a')">Get Copy</button>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sermons Section -->
-    <section id="sermons" class="section-padding">
+    <!-- Class Recordings Section (Duplicate of Sermons) -->
+    <section id="classes" class="section-padding" style="background: var(--off-white);">
         <div class="container">
-            <div class="section-header text-center reveal">
-                <span>Sermon Archive</span>
-                <h2>Recent Teachings</h2>
+            <div class="text-center reveal" style="margin-bottom: 50px;">
+                <span style="color:var(--accent-gold); font-weight:700; text-transform:uppercase; font-size:0.8rem; letter-spacing:2px;">E-Learning</span>
+                <h2 style="font-size: 2.2rem; margin-top: 10px;">Recent Class Sessions</h2>
             </div>
 
             <div class="sermon-grid">
@@ -670,9 +544,9 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Leadership</span>
-                        <h3 class="card-title">Kingdom Dominion in Business</h3>
-                        <a href="javascript:void(0)" class="text-gold" style="font-weight:600; font-size:0.9rem; margin-top:auto;">Watch Now &rarr;</a>
+                        <span class="card-cat">Module 1</span>
+                        <h3 class="card-title">Understanding Kingdom Authority</h3>
+                        <a href="javascript:void(0)" class="text-gold" style="font-weight:600; font-size:0.9rem; margin-top:auto;">Watch Session &rarr;</a>
                     </div>
                 </article>
 
@@ -683,9 +557,9 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Spiritual Growth</span>
-                        <h3 class="card-title">Understanding Your Seasons</h3>
-                        <a href="javascript:void(0)" class="text-gold" style="font-weight:600; font-size:0.9rem; margin-top:auto;">Watch Now &rarr;</a>
+                        <span class="card-cat">Module 2</span>
+                        <h3 class="card-title">Building Effective Teams</h3>
+                        <a href="javascript:void(0)" class="text-gold" style="font-weight:600; font-size:0.9rem; margin-top:auto;">Watch Session &rarr;</a>
                     </div>
                 </article>
 
@@ -696,66 +570,69 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <span class="card-cat">Faith</span>
-                        <h3 class="card-title">The Dynamics of Prayer</h3>
-                        <a href="javascript:void(0)" class="text-gold" style="font-weight:600; font-size:0.9rem; margin-top:auto;">Watch Now &rarr;</a>
+                        <span class="card-cat">Module 3</span>
+                        <h3 class="card-title">Missions Strategy 101</h3>
+                        <a href="javascript:void(0)" class="text-gold" style="font-weight:600; font-size:0.9rem; margin-top:auto;">Watch Session &rarr;</a>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Events Section -->
-    <section id="events" class="section-padding" style="background: var(--off-white);">
+    <!-- Past Classes / Graduation Section -->
+    <section id="graduation" class="section-padding">
         <div class="container">
-            <div class="section-header text-center reveal">
-                <span>Schedule</span>
-                <h2>Upcoming Events</h2>
+            <div class="text-center reveal" style="margin-bottom: 50px;">
+                <span style="color:var(--accent-gold); font-weight:700; text-transform:uppercase; font-size:0.8rem; letter-spacing:2px;">Legacy</span>
+                <h2 style="font-size: 2.2rem; margin-top: 10px;">Graduation Gallery</h2>
+                <p style="color: var(--text-light); max-width: 600px; margin: 10px auto;">Celebrating the leaders who have passed through our doors and are now impacting the world.</p>
             </div>
 
-            <div class="events-list reveal">
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="day">15</span>
-                        <span class="month">NOV</span>
-                    </div>
-                    <div class="event-details">
-                        <h3>Leadership Summit Intensive</h3>
-                        <div class="event-meta">
-                            <i class="far fa-clock"></i> 9:00 AM - 4:00 PM
-                            <span style="margin: 0 10px;">|</span>
-                            <i class="fas fa-map-marker-alt"></i> Main Sanctuary
-                        </div>
-                        <p style="font-size:0.9rem; color:var(--text-light);">A deep dive into kingdom leadership dynamics.</p>
+            <div class="gallery-grid">
+                <!-- Class 2023 -->
+                <div class="grad-card reveal">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop" alt="Cohort 2023">
+                    <div class="grad-overlay">
+                        <span class="grad-year">Class of 2023</span>
+                        <span class="grad-desc">Foundation Cohort</span>
                     </div>
                 </div>
-                <div class="event-item">
-                    <div class="event-date">
-                        <span class="day">02</span>
-                        <span class="month">DEC</span>
-                    </div>
-                    <div class="event-details">
-                        <h3>Night of Impartation</h3>
-                        <div class="event-meta">
-                            <i class="far fa-clock"></i> 6:00 PM - 9:00 PM
-                        </div>
-                        <p style="font-size:0.9rem; color:var(--text-light);">A special time of worship and prophetic impartation.</p>
+
+                <!-- Class 2022 -->
+                <div class="grad-card reveal">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2069&auto=format&fit=crop" alt="Cohort 2022">
+                    <div class="grad-overlay">
+                        <span class="grad-year">Class of 2022</span>
+                        <span class="grad-desc">Leadership Intensive</span>
                     </div>
                 </div>
+
+                <!-- Class 2021 -->
+                <div class="grad-card reveal">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2069&auto=format&fit=crop" alt="Cohort 2021">
+                    <div class="grad-overlay">
+                        <span class="grad-year">Class of 2021</span>
+                        <span class="grad-desc">Ministry Ordination</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="#contact" class="btn btn-gold">Join Next Cohort</a>
             </div>
         </div>
     </section>
 
-    <!-- Contacts Section -->
-    <section id="contacts" class="section-padding">
+    <!-- Contact / Register Section -->
+    <section id="contact" class="section-padding" style="background: var(--off-white);">
         <div class="container">
             <div class="prayer-container reveal">
                 <div class="text-center" style="margin-bottom: 30px;">
-                    <span style="color:var(--accent-gold); font-weight:700; text-transform:uppercase; font-size:0.8rem;">How can we help?</span>
-                    <h2>Contact Us</h2>
+                    <span style="color:var(--accent-gold); font-weight:700; text-transform:uppercase; font-size:0.8rem;">Join Us</span>
+                    <h2>Register Interest</h2>
                 </div>
                 
-                <form id="prayerForm" onsubmit="handlePrayerSubmit(event)">
+                <form id="prayerForm" onsubmit="handleFormSubmit(event)">
                     <div class="form-group">
                         <input type="text" id="p_name" class="form-control" required>
                         <label for="p_name" class="form-label">Full Name</label>
@@ -766,9 +643,9 @@
                     </div>
                     <div class="form-group">
                         <textarea id="p_request" class="form-control" rows="3" required></textarea>
-                        <label for="p_request" class="form-label">Message or Prayer Request</label>
+                        <label for="p_request" class="form-label">Message or Inquiry</label>
                     </div>
-                    <button type="submit" class="btn btn-gold" style="width: 100%; border-radius: 8px;">Send Message</button>
+                    <button type="submit" class="btn btn-gold" style="width: 100%; border-radius: 8px;">Submit Application</button>
                 </form>
             </div>
         </div>
@@ -780,50 +657,33 @@
             <div class="footer-grid">
                 <div>
                     <span class="footer-logo">KINGDOM<span class="text-gold">LIFE</span></span>
-                    <p style="margin-bottom: 20px; opacity: 0.7;">Transforming lives through the unadulterated Word of God and the power of the Holy Spirit.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+                    <p style="margin-bottom: 20px; opacity: 0.7;">The Kingdom Impact School of Leadership. Raising leaders who build nations.</p>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Ministry</h4>
+                    <h4>School</h4>
                     <ul>
-                        <li><a href="#ministry">About Apostle Chris</a></li>
-                        <li><a href="#sermons">Sermons</a></li>
-                        <li><a href="#books">Books</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h4>Get Involved</h4>
-                    <ul>
-                        <li><a href="#events">Events Calendar</a></li>
-                        <li><a href="javascript:void(0)" onclick="toggleModal('giving')">Give Online</a></li>
-                        <li><a href="#contacts">Contact Us</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#books">Curriculum</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4>Visit Us</h4>
-                    <p style="opacity: 0.7; margin-bottom: 10px;">
-                        Kasarani<br>
-                        Nairobi, Kenya
+                    <h4>Main Website</h4>
+                    <p style="margin-bottom: 10px;">
+                        <a href="index.html" style="text-decoration: underline; color: var(--accent-gold);">Return to Main Website</a>
                     </p>
-                    <p style="opacity: 0.7;">Sundays: 10:00 AM</p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 Kingdom Life International Ministries. All Rights Reserved.</p>
+                <p>&copy; 2026 Kingdom Life International Ministries. The Kingdom Impact School of Leadership.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Donation Modal -->
+    <!-- Donation Modal (Local) -->
     <div class="modal-overlay" id="globalModal">
         <div class="modal-content">
             <span class="close-modal" onclick="toggleModal()">&times;</span>
@@ -840,18 +700,10 @@
 
     <script>
         /* =========================================
-           1. BACK TO TOP & NAV LOGIC
+           1. NAV LOGIC
            ========================================= */
-        const backToTopBtn = document.getElementById('backToTop');
         const nav = document.getElementById('navbar');
-        
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('visible');
-            } else {
-                backToTopBtn.classList.remove('visible');
-            }
-
             if (window.scrollY > 50) {
                 nav.classList.add('scrolled');
             } else {
@@ -859,16 +711,12 @@
             }
         });
 
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
         /* =========================================
            2. WHATSAPP BOOK LOGIC
            ========================================= */
         function buyBook(bookTitle, bookImgUrl) {
             const phoneNumber = "254111444829";
-            const message = `Hello, I am interested in purchasing the book: "${bookTitle}".\n\nImage Link: ${bookImgUrl}`;
+            const message = `Hello, I am interested in purchasing the school curriculum book: "${bookTitle}".\n\nImage Link: ${bookImgUrl}`;
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
             window.open(whatsappUrl, '_blank');
@@ -888,7 +736,6 @@
         }
 
         window.addEventListener('resize', resizeCanvas);
-        
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
@@ -952,37 +799,11 @@
             entries.forEach(entry => {
                 if(entry.isIntersecting) {
                     entry.target.classList.add('active');
-                    if (entry.target.querySelector('.stat-number')) {
-                        startCounters();
-                    }
                 }
             });
         }, { threshold: 0.1 });
 
         revealElements.forEach(el => revealObserver.observe(el));
-
-        let countersStarted = false;
-        function startCounters() {
-            if(countersStarted) return;
-            countersStarted = true;
-            const counters = document.querySelectorAll('.stat-number');
-            counters.forEach(counter => {
-                const target = +counter.getAttribute('data-target');
-                const duration = 2000;
-                const increment = target / (duration / 16);
-                let current = 0;
-                const updateCounter = () => {
-                    current += increment;
-                    if (current < target) {
-                        counter.innerText = Math.ceil(current) + '+';
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.innerText = target + '+';
-                    }
-                };
-                updateCounter();
-            });
-        }
 
         /* =========================================
            5. MODALS & FORMS
@@ -1008,12 +829,12 @@
 
                 if (type === 'giving') {
                     content.innerHTML = `
-                        <h2 style="font-family:'Playfair Display'; margin-bottom:15px;">Support the Ministry</h2>
-                        <p style="margin-bottom:20px; color:var(--text-light);">Your giving helps us take the gospel to the nations.</p>
+                        <h2 style="font-family:'Playfair Display'; margin-bottom:15px;">Support the School</h2>
+                        <p style="margin-bottom:20px; color:var(--text-light);">Your giving supports the training of the next generation of leaders.</p>
                         <div class="mpesa-box">
                             <h3><i class="fas fa-mobile-alt"></i> M-PESA</h3>
                             <p><strong>Paybill:</strong> 888 999</p>
-                            <p><strong>Account:</strong> PARTNER</p>
+                            <p><strong>Account:</strong> SCHOOL</p>
                         </div>
                         <div class="donation-option" onclick="showToast('Redirecting to PayPal...')">
                             <div class="donation-icon"><i class="fab fa-paypal" style="font-size:1.5rem; color:#0070ba;"></i></div>
@@ -1032,14 +853,14 @@
             if (e.target === document.getElementById('globalModal')) toggleModal();
         });
 
-        function handlePrayerSubmit(e) {
+        function handleFormSubmit(e) {
             e.preventDefault();
             const btn = e.target.querySelector('button');
             btn.innerText = "Sending...";
             setTimeout(() => {
-                showToast('Message received. We will connect with you shortly.');
+                showToast('Application received. We will contact you shortly.');
                 e.target.reset();
-                btn.innerText = "Send Message";
+                btn.innerText = "Submit Application";
             }, 1500);
         }
     </script>
